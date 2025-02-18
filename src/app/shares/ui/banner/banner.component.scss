@@ -1,0 +1,12 @@
+.banner {
+  position: relative;
+  background: url("../../../../assets/images/banner-img.webp") no-repeat center
+    center/cover;
+  .nav-bar {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 40%;
+  }
+}

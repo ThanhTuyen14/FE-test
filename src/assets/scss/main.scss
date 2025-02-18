@@ -1,0 +1,9 @@
+@use "color";
+@use "custom-theme";
+@use "button";
+@use "header";
+@use "common";
+
+body {
+  color: color.$brown;
+}

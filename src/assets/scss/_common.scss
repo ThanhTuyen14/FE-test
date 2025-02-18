@@ -1,0 +1,58 @@
+@use "color";
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  .main-title {
+    font-weight: bold;
+    color: #e84825;
+    padding: 0 20px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    background-color: white;
+    z-index: 1;
+  }
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(187, 187, 187, 1);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card {
+  .case-title {
+    color: color.$orange;
+    margin-top: 1rem;
+  }
+  .case-sub-title {
+    color: color.$brown;
+    font-size: 1.25rem;
+  }
+  .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    word-break: break-word;
+    margin: 0.5rem 0 0.75rem;
+    color: color.$brown;
+  }
+}

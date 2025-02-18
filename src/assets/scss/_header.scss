@@ -1,0 +1,9 @@
+@use "./color";
+
+.menu-list {
+  button {
+    &:hover {
+      color: color.$orange;
+    }
+  }
+}

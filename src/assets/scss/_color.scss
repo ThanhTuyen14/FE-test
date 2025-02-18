@@ -1,0 +1,43 @@
+$brown: rgba(86, 44, 44, 1);
+$brown-07: rgba(86, 44, 44, 0.7);
+$orange: rgba(242, 84, 45, 1);
+$darkOrange: rgba(202, 62, 27, 1);
+$lightOrange: rgba(255, 244, 241, 1);
+$white: rgba(255, 255, 255, 1);
+$white-06: rgba(255, 255, 255, 0.6);
+
+.brown {
+  color: $brown;
+}
+
+.bg-brown {
+  background-color: $brown;
+}
+
+.bg-brown-07 {
+  background-color: $brown-07;
+}
+
+.orange {
+  color: $orange;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-dark-orange {
+  background-color: $darkOrange;
+}
+
+.white {
+  color: $white;
+}
+
+.white-06 {
+  color: $white-06;
+}
+
+.bg-light-orange {
+  background-color: $lightOrange;
+}

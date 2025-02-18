@@ -1,0 +1,48 @@
+<section class="moments">
+  <div class="container mx-auto py-10">
+    <div class="grid grid-cols-2 gap-5 mb-6 items-center">
+      <p class="text-left">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially
+      </p>
+      <h2>
+        IMMORTALISEZ DES MOMENTS INOUBLIABLES AVEC
+        <span class="highlight">#BASIC</span>
+      </h2>
+    </div>
+
+    <div class="main-moment">
+      <img [src]="mainMoment.image" alt="Main moment" />
+      <div class="moment-info">
+        <div class="info">
+          <p class="content">{{ mainMoment.title }}</p>
+          <p class="description">{{ mainMoment.description }}</p>
+        </div>
+        <div>
+          <span class="date">{{ mainMoment.date }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="moment-cards">
+      @for (card of momentCards; track $index) {
+      <div class="card">
+        <img [src]="card.image" alt="{{ card.title }}" />
+        <div class="card-info">
+          <p>{{ card.user }}</p>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+      </div>
+      }
+    </div>
+
+    <p class="footer-text text-center">
+      Consultez <b>BASIC</b> et <b>#BASIC</b> pour découvrir les expériences
+      inoubliables des pourvoiries et activités BASIC.
+    </p>
+  </div>
+</section>
